@@ -1,0 +1,107 @@
+@import url('./colors.css');
+
+.parallax-bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 30vh;
+  background-color: var(--accent-color);
+}
+
+.fullscreen-bg-img {  
+    min-height: 100vh;
+    background-image: url('../../assets/jumbo.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.display-font {
+  font-family: 'Playfair Display', serif;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-hr {
+  flex-grow: 1;
+  margin: 16px;
+}
+
+/* 480px, 768px, 1024px, and 1280px */
+
+.gutter {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.bleed {
+  width: calc(100% + 48px);
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.indent {
+  text-indent: 2em;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+  padding-bottom: 48px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  font-weight: 600;
+  padding-bottom: 48px;
+}
+
+.img-mobile-center {
+  margin: 0 auto;
+  display: block;
+}
+
+.section-pad {
+  padding: 100px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .gutter {
+    padding-left: 36px !important;
+    padding-right: 36px !important;;
+  }
+
+  .img-mobile-center {
+    margin: unset;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gutter {
+    padding-left: 72px !important;
+    padding-right: 72px !important;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gutter {
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+  }
+}

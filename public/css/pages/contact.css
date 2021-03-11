@@ -1,0 +1,44 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+@import url('../components/footer.css');
+@import url('../components/grids.css');
+@import url('../components/review-card.css');
+@import url('../components/button.css');
+
+.fullscreen-bg-img {
+  min-height: 50vh;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-phone-number {
+  font-weight: 600;
+}
+
+.hours-title {
+  margin-top: 32px;
+}
+
+.hours-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-button {
+  margin-bottom: 16px;
+}
+
+.action-button:hover {
+  color: var(--accent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .action-button.mobile {
+    display: none;
+  }
+}

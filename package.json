@@ -1,0 +1,14 @@
+{
+  "name": "portfolio2.0",
+  "version": "1.0.0",
+  "description": "A new refactored portfolio site for Christian Brooks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

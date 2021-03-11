@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.logo {
+  width: 5em;
+  height: auto;
+}
+
+.logo-sub-text {
+  color: var(--secondary-color);
+  font-size: 1em;
+}
+
+.end {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 10em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1280px) {
+
+}

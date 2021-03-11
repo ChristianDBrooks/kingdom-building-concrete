@@ -1,0 +1,87 @@
+.jumbo {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.jumbo > h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--secondary-color);
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.title-underline {
+  border-bottom: 16px solid var(--accent-color);
+  display: inline-block;
+  line-height: 0.50;
+}
+
+.jumbo > .sub-title {
+  color: var(--secondary-color);
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+.jumbo .action-button {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  white-space: nowrap;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 32px;
+  margin-top: 48px;
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
+  border: 3px solid var(--accent-color);
+
+  /* animation */
+  -webkit-transition: all .5s ease; 
+  -moz-transition: all .5s ease; 
+  -o-transition: all .5s ease; 
+  -ms-transition: all .5s ease; 
+  transition: all .5s ease;
+}
+
+.jumbo .action-button.desktop {
+  display: none;
+}
+
+.jumbo .action-button:first-child {
+  margin-right: 16px;
+}
+
+.jumbo .action-button:hover {
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .jumbo {
+    padding: 2em 0;
+  }
+
+  .jumbo .action-button.mobile {
+    display: none;
+  }
+
+  .jumbo .action-button.desktop {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .jumbo {
+    padding: 3em 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .jumbo {
+    font-size: 1.5em;
+  }
+}
