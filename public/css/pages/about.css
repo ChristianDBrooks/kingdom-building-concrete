@@ -1,31 +1,19 @@
 @import url('../components/header.css');
 @import url('../components/navbar.css');
 @import url('../components/footer.css');
-@import url('../components/grids.css');
-@import url('../components/review-card.css');
 
-.fullscreen-bg-img {
-  min-height: 50vh;
+#portrait {
+  position: relative;
+  object-fit: cover;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  margin: auto;
 }
 
-.steak {
-  background-image: url('../../assets/steak-dinner.jpg');
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about p {
-  max-width: 500px;
-}
-
-.about p:first-of-type {
-  margin-top: 0;
-}
-
-.first-word {
-  font-size: 2em;
+#blob {
+  position: absolute;
+  filter: opacity(0.65);
+  width: 375px;
+  padding-right: 37px;
 }

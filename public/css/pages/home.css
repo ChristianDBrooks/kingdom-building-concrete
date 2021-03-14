@@ -2,33 +2,127 @@
 @import url('../components/navbar.css');
 @import url('../components/jumbo.css');
 @import url('../components/footer.css');
-@import url('../components/grids.css');
 @import url('../components/button.css');
 
-.food {
-  background-image: url('../../assets/steak-dinner.jpg');
+.hero {
+  background-image: linear-gradient(var(--accent-dark-color), var(--accent-color));
+  padding: 32px 0;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.content {
+  color: var(--secondary-color);
+  position: relative;
+  z-index: 1010;
 }
 
-.about p {
-  max-width: 500px;
+#swoop-wrapper {
+  overflow: hidden;
 }
 
-.about p:first-of-type {
-  margin-top: 0;
+#swoop {
+  margin-bottom: 175px;
+  z-index: 1000;
+  width: 100vw;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
 }
 
-.first-word {
+#devices {
+  min-width: 300px;
+  width: 50vw;
+  height: auto;
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+}
+
+.hero > h1 {
   font-size: 2em;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.hero > .sub-title {
+  font-size: .75em;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+.action-button {
+  position: relative;
+  margin-top: 64px;
+}
+
+.feature-item img {
+  width: 100px;
+  height: auto;
+}
+
+.feature-grid {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+
+.who-grid {
+  margin: auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 96px;
+}
+
+.perk-grid {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.perk img {
+  margin-right: 16px;
+}
+#about-me {
+  margin: auto;
+}
+
+#portrait {
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
 }
 
 @media only screen and (min-width: 768px) {
-  .contact {
-    text-align: left !important;
+  .feature-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .perk-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+
+  #swoop {
+    margin-bottom: 275px;
+  }
+
+  #devices {
+    max-width: 500px;
+      bottom: -280px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1280px) {
+
 }

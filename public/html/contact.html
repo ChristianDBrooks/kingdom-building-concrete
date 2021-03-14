@@ -7,91 +7,82 @@
   <link rel='stylesheet' href='../css/base/styles.css'>
   <link rel='stylesheet' href='../css/pages/contact.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-  <title>John's Family Restaurant - Contact</title>
+  <title>Brooks Web Design - Contact</title>
   <link rel='icon' href='../assets/favicon.ico'>
 </head>
 <body>
 
-  <div class="fullscreen-bg-img">
-    <section class='header gutter section-pad'>
+  <section class='bg-accent-dark gutter'>
+    <!-- HEADER -->
+    <div class='header'>
       <div class='start'>
-        <img class='logo' src='../assets/johns-white.png' alt='restaurant logo'>
+        <img class='logo' src='../assets/logo-white.svg' alt='restaurant logo'>
       </div>
       <div class='end'>
-
+  
+        <!-- NAVBAR -->
         <div class='mobile-navbar'>
           <span id='mobile-navbar-menu-icon' class='material-icons' onclick='toggleNavbarMenu()'>menu</span>
           <div id='mobile-navbar-menu'>
             <div id='mobile-navbar-items'>
               <a href='home.html'>Home</a>
-              <a href='menu.html'>Menu</a>
+              <a href='services.html'>Services</a>
               <a href='about.html'>About Us</a>
               <a href='contact.html'>Contact</a>
             </div>
           </div>
         </div>
-
         <div class='desktop-navbar'>
           <div id='desktop-navbar-items'>          
             <a href='home.html'>Home</a>
-            <a href='menu.html'>Menu</a>
+            <a href='services.html'>Services</a>
             <a href='about.html'>About Us</a>
-            <a href='contact.html'>Contact</a>
+            <a class='navlink-underline' href='contact.html'>Contact</a>
           </div>
         </div>
-
       </div>
-    </section>
-    <h1 class='page-title text-center text-secondary'>Contact Us</h1>
-  </div>
-
-  <section class='contact gutter section-pad d-flex-center'>
-    <div class='contact-card'>
-      <h3 class='font-display'>John's Family Restuarant</h3>
-      <p>2002 Westinghouse Blvd.<br>
-        Charlotte, NC 28273</p>
-      <span class='contact-phone-number'>(704) 588-6613</span>
-      <a class='action-button mobile d-flex-center' href="tel:123-456-7890">Call Now</a>
-      <h3 class='hours-title'>Hours</h3>
-
-      <span class='hours-list-item'>Sunday: <b>Closed</b></span>
-      <span class='hours-list-item'>Monday: <span>11am - 9pm</span></span>
-      <span class='hours-list-item'>Tuesday: <span>11am - 9pm</span></span>
-      <span class='hours-list-item'>Wednesday: <span>11am - 9pm</span></span>
-      <span class='hours-list-item'>Thursday: <span>11am - 9pm</span></span>
-      <span class='hours-list-item'>Friday: <span>11am - 9pm</span></span>
-      <span class='hours-list-item'>Saturday: <span>11am - 9pm</span></span>
     </div>
   </section>
+
+  <section class="parallax-bg-img pattern d-flex-center">
+    <h1 class="page-title text-secondary">Contact</h1>
+  </section>
+
+  <section class='contact gutter padding-t padding-b'>
+    <span>Phone: 803-389-4244</span>
+    <span>Email: ChristianDBrooks@gmail.com</span>
+  </section>
   
-  <section class='footer gutter section-pad'>
+  <!-- FOOTER -->
+  <section class='footer gutter padding-t'>
     <div class="footer-grid">
       <div class="footer-item">
         <h3>Contact</h3>
-        <span>Phone: (704) 588-6613</span>
-        <span>
-          2002 Westinghouse Blvd.<br>
-          Charlotte, NC 28273
-        </span>
+        <span>Phone: (803) 389-4244</span>
+        <span>Email: christiandbrooks@gmail.com</span>
       </div>
       <div class="footer-item">
         <h3>Navigation</h3>
         <a href='home.html'>Home</a>
-        <a href='menu.html'>Menu</a>
+        <a href='services.html'>Services</a>
         <a href='about.html'>About Us</a>
         <a href='contact.html'>Contact</a>
       </div>
       <div class="footer-item">
-        <h3>Restaurant Hours</h3>
-        <span class='hours-list-item'>Sunday: Closed</span>
-        <span class='hours-list-item'>Monday - Saturday: <span>11am - 9pm</span></span>
+        <h3>Services</h3>
+        <span>Web Design</span>
+        <span>Website Maintenance</span>
+        <span>Content Creation</span>
+        <span>Logo Design</span>
       </div>
     </div>
   </section>
 
+  <!-- COPYRIGHT -->
   <section class='copyright gutter d-flex-center bg-dark text-secondary'>
     <p>Copyright © 2021 Brooks Designs - All Rights Reserved</p>
   </section>
+
 </body>
 </html>
 <script src='../scripts/navbar.js'></script>

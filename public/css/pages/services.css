@@ -1,0 +1,42 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+@import url('../components/footer.css');
+@import url('../components/copyright.css');
+
+.services-grid {
+  margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 144px 96px;
+  grid-template-areas: 
+  "."
+  "."
+  "four"
+  "three";
+}
+
+img {
+  align-self: center;
+  width: 100%
+}
+
+.p-title {
+  font-size: 2.2em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+#item-3 {grid-area: four;}
+
+#item-4 {grid-area: three;}
+
+@media only screen and (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    ". ."
+    "three four";
+  }
+}

@@ -7,13 +7,14 @@
 }
 
 #mobile-navbar-menu-icon {
-  z-index: 1000;
+  z-index: 10001;
   color: var(--secondary-color);
   cursor: pointer;
 }
 
 #mobile-navbar-menu {
-  background-color: var(--accent-color);
+  z-index: 10000;
+  background-color: var(--accent-light-color);
   width: 0;
   height: 100%;
 
@@ -168,7 +169,7 @@
   -ms-transition: all .35s ease; 
   transition: all .35s ease;
   
-  color: var(--accent-color);
+  color: var(--accent-light-color);
 }
 
 .desktop-dropdown-nav {

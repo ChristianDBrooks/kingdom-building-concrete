@@ -7,22 +7,26 @@
   <link rel='stylesheet' href='../css/base/styles.css'>
   <link rel='stylesheet' href='../css/pages/about.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-  <title>John's Family Restaurant - About</title>
+  <title>Brooks Web Design - About</title>
   <link rel='icon' href='../assets/favicon.ico'>
 </head>
 <body>
-  <div class="fullscreen-bg-img">
-    <section class='header gutter section-pad'>
+
+  <section class='bg-accent-dark gutter'>
+    <!-- HEADER -->
+    <div class='header'>
       <div class='start'>
-        <img class='logo' src='../assets/johns-white.png' alt='restaurant logo'>
+        <img class='logo' src='../assets/logo-white.svg' alt='restaurant logo'>
       </div>
       <div class='end'>
+  
+        <!-- NAVBAR -->
         <div class='mobile-navbar'>
           <span id='mobile-navbar-menu-icon' class='material-icons' onclick='toggleNavbarMenu()'>menu</span>
           <div id='mobile-navbar-menu'>
             <div id='mobile-navbar-items'>
               <a href='home.html'>Home</a>
-              <a href='menu.html'>Menu</a>
+              <a href='services.html'>Services</a>
               <a href='about.html'>About Us</a>
               <a href='contact.html'>Contact</a>
             </div>
@@ -31,110 +35,57 @@
         <div class='desktop-navbar'>
           <div id='desktop-navbar-items'>          
             <a href='home.html'>Home</a>
-            <a href='menu.html'>Menu</a>
-            <a href='about.html'>About Us</a>
+            <a href='services.html'>Services</a>
+            <a class='navlink-underline' href='about.html'>About Us</a>
             <a href='contact.html'>Contact</a>
           </div>
         </div>
       </div>
-    </section>
-    <h1 class="page-title text-center text-secondary">About Us</h1>
-  </div>
-
-  <section class='about gutter section-pad'>
-    <h2 class="section-title text-center text-primary">Our Story</h2>
-    <p class="indent"><span class="display-font first-word">We</span> have been serving up delicious, home cooked meals for over 25 years here in Charlotte,
-      from seafood and steak to southern home style dishes and more, we have all your taste buds covered!
-      All of our menu selections are made from the freshest ingredients. Even our daily selections of vegetables
-      are always fresh, never canned, and that makes all the difference.
-      Have a sweet tooth? Try our homemade desserts! Beer and wine are also available.
-    </p>
-    <p class="indent">
-      We are family owned and operated and focus on bringing you, our customer, the best food served in a family atmosphere.
-      We invite you to come by and see what makes John’s Family Restaurant the best place in Charlotte for family dining!</p>
-  </section>
-
-  <div class="parallax-bg-img steak"></div>
-
-  <section class='reviews gutter section-pad'>
-    <h2 class="section-title text-center text-primary">Customer Experiences</h2>
-    <p class="indent text-center">Here's what a couple of our generous customers had to say about us.</p>
-    <div class="review-grid">
-      <div class="review-card">
-        <h3>Jamie S.</h3>
-        <div class="review-stars">
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sequi incidunt est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis accusamus beatae doloribus, quibusdam, porro et distinctio minus deleniti rem eaque aspernatur maiores ducimus ex adipisci facere eveniet iste illum?</p>
-      </div>
-      <div class="review-card">
-        <h3>Alexander L.</h3>
-        <div class="review-stars">
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sequi incidunt est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis accusamus beatae doloribus, quibusdam, porro et distinctio minus deleniti rem eaque aspernatur maiores ducimus ex adipisci facere eveniet iste illum?</p>
-      </div>
-      <div class="review-card">
-        <h3>Stephanie B.</h3>
-        <div class="review-stars">
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sequi incidunt est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis accusamus beatae doloribus, quibusdam, porro et distinctio minus deleniti rem eaque aspernatur maiores ducimus ex adipisci facere eveniet iste illum?</p>
-      </div>
-      <div class="review-card">
-        <h3>Charles D.</h3>
-        <div class="review-stars">
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-          <span class="material-icons">star</span>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sequi incidunt est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis accusamus beatae doloribus, quibusdam, porro et distinctio minus deleniti rem eaque aspernatur maiores ducimus ex adipisci facere eveniet iste illum?</p>
-      </div>
     </div>
   </section>
+
+  <section class="parallax-bg-img pattern d-flex-center">
+    <h1 class="page-title text-secondary">About</h1>
+  </section>
+
+  <section class='about gutter padding-b'>
+    <div class="d-flex-center padding-t padding-b">
+      <img id='blob' src="../assets/blob.svg" alt="text decorations">
+      <img id='portrait' src="../assets/christian.jpg" alt="picture of me">
+    </div>
+    <p class="text-center">My name is Christian Brooks. Me and wife got married in the Spring of 2020, right in the midst of COVID-19. When I started dating my now wife, I realized I need to get a career to support a family with her one day. I decided to become a web developer, and went to UNC Charlotte’s Full Stack Web Dev Bootcamp where I learned everything I need to know to make enterprise level websites, with the latest technologies and newest standards. After developing websites at fortune 500 companies for a few years I realized I had the skills and capability to make a difference for small businesses. So I got to work figuring out what small businesses need, and I found out they need fast, reliable websites, for an affordable price that won’t gouge their profit margins. On top of running a business, they don’t need the stress of trying to keep up with a website. That’s where I wanted to relieve the stress, so owners can put that responsibility on me, and focus on running their business.</p>
+  </section>
   
-  <section class='footer gutter section-pad'>
+  <!-- FOOTER -->
+  <section class='footer gutter padding-t'>
     <div class="footer-grid">
       <div class="footer-item">
         <h3>Contact</h3>
-        <span>Phone: (704) 588-6613</span>
-        <span>
-          2002 Westinghouse Blvd.<br>
-          Charlotte, NC 28273
-        </span>
+        <span>Phone: (803) 389-4244</span>
+        <span>Email: christiandbrooks@gmail.com</span>
       </div>
       <div class="footer-item">
         <h3>Navigation</h3>
         <a href='home.html'>Home</a>
-        <a href='menu.html'>Menu</a>
+        <a href='services.html'>Services</a>
         <a href='about.html'>About Us</a>
         <a href='contact.html'>Contact</a>
       </div>
       <div class="footer-item">
-        <h3>Restaurant Hours</h3>
-        <span class='hours-list-item'>Sunday: Closed</span>
-        <span class='hours-list-item'>Monday - Saturday: <span>11am - 9pm</span></span>
+        <h3>Services</h3>
+        <span>Web Design</span>
+        <span>Website Maintenance</span>
+        <span>Content Creation</span>
+        <span>Logo Design</span>
       </div>
     </div>
   </section>
 
+  <!-- COPYRIGHT -->
   <section class='copyright gutter d-flex-center bg-dark text-secondary'>
     <p>Copyright © 2021 Brooks Designs - All Rights Reserved</p>
   </section>
+ 
 </body>
 </html>
 <script src='../scripts/navbar.js'></script>

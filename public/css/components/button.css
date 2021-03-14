@@ -1,5 +1,5 @@
 .action-button {
-  background-color: var(--accent-color);
+  background-color: var(--accent-light-color);
   color: var(--secondary-color);
   white-space: nowrap;
   border: none;
@@ -9,7 +9,7 @@
   font-size: 1em;
   font-weight: 400;
   cursor: pointer;
-  border: 3px solid var(--accent-color);
+  border: 3px solid var(--accent-light-color);
 
   /* animation */
   -webkit-transition: all .5s ease; 

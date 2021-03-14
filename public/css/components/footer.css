@@ -1,4 +1,19 @@
+.footer-grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 96px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-grid {
+    width: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .footer {
+  padding-bottom: 96px;
   color: var(--secondary-color);
   background-color: var(--darkgrey-color);
 }
@@ -9,7 +24,6 @@
 }
 
 .footer-item h3 {
-    font-family: 'Playfair Display', serif;
     margin-bottom: 32px;
 }
 
