@@ -1,15 +1,21 @@
 .action-button {
-  background-color: var(--accent-light-color);
+  background-color: transparent;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, orange, red);
+  
   color: var(--secondary-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
   white-space: nowrap;
-  border: none;
-  border-radius: 5px;
   padding: 8px 32px;
   margin-top: 48px;
-  font-size: 1em;
-  font-weight: 400;
+  
+  box-shadow: -8px 8px #FF7301;
+
   cursor: pointer;
-  border: 3px solid var(--accent-light-color);
 
   /* animation */
   -webkit-transition: all .5s ease; 

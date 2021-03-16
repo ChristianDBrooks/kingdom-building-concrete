@@ -5,48 +5,42 @@
 @import url('../components/button.css');
 
 .hero {
-  background-image: linear-gradient(var(--accent-dark-color), var(--accent-color));
-  padding: 32px 0;
+  height: 1000px;
 }
 
-.content {
-  color: var(--secondary-color);
-  position: relative;
-  z-index: 1010;
+.hero > .content {
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#swoop-wrapper {
-  overflow: hidden;
+@media only screen and (min-width: 1024px) {
+  .hero > .content {
+    justify-content: space-between;
+  }
+
+  .hero {
+    height: 800px;
+  }
 }
 
-#swoop {
-  margin-bottom: 175px;
-  z-index: 1000;
-  width: 100vw;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
+.hero-title {
+  color: #D1D1D1;
+  font-size: 96px;
+  margin: 0;
 }
 
-#devices {
-  min-width: 300px;
-  width: 50vw;
-  height: auto;
-  position: absolute;
-  bottom: -200px;
-  right: 0;
+.hero-sub-title {
+  color: #D1D1D1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin: 0;
 }
 
-.hero > h1 {
-  font-size: 2em;
-  line-height: 1.1;
-  font-weight: 600;
-}
-
-.hero > .sub-title {
-  font-size: .75em;
-  font-weight: 300;
-  margin-top: 16px;
+#hero-image {
+  padding-top: 64px;
+  width: 90vw;
+  max-width: 500px;
 }
 
 .action-button {
@@ -54,9 +48,30 @@
   margin-top: 64px;
 }
 
+.services {
+  position: relative;
+  overflow: hidden;
+}
+
+#hexagon-one {
+  position: absolute;
+  left: -200px;
+  top: 50px;
+}
+
+#hexagon-two {
+  position: absolute;
+  right: -275px;
+  bottom: 100px;
+}
+
 .feature-item img {
   width: 100px;
   height: auto;
+}
+
+.feature-item h4 {
+  margin-top: 16px;
 }
 
 .feature-grid {
@@ -64,6 +79,80 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 64px;
+}
+
+.details-grid {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.detail:nth-child(odd) {
+  margin-left: auto;
+}
+
+.detail img:nth-child(even) {
+  margin-left: 16px;
+}
+
+.detail img:nth-child(odd) {
+  margin-right: 16px;
+}
+
+.detail h4 {
+  font-size: 32px;
+  margin: 0 0 16px;
+}
+
+.detail p {
+  margin: 0;
+}
+
+.package-grid {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.package-card {
+  justify-self: center;
+  width: 360px;
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.package-card h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.package-card .plus-sign {
+  font-size: 24px;
+}
+
+.package-card .paragraph-two {
+  line-height: 2;
+}
+
+.package-card span {
+  font-family: 'Poppins' sans-serif;
+  letter-spacing: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.package-card .pricing {
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .who-grid {
@@ -74,17 +163,6 @@
   gap: 96px;
 }
 
-.perk-grid {
-  margin-top: 96px;
-  margin-bottom: 96px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-}
-
-.perk img {
-  margin-right: 16px;
-}
 #about-me {
   margin: auto;
 }
@@ -99,24 +177,7 @@
 
 @media only screen and (min-width: 768px) {
   .feature-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .perk-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .content {
-    font-size: 18px;
-  }
-
-  #swoop {
-    margin-bottom: 275px;
-  }
-
-  #devices {
-    max-width: 500px;
-      bottom: -280px;
   }
 }
 

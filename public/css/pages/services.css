@@ -24,10 +24,6 @@ img {
   font-size: 2.2em;
 }
 
-p {
-  font-size: 1.1em;
-}
-
 #item-3 {grid-area: four;}
 
 #item-4 {grid-area: three;}
