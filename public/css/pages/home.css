@@ -81,6 +81,12 @@
   gap: 64px;
 }
 
+@media only screen and (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .details-grid {
   margin-top: 96px;
   display: grid;
@@ -118,8 +124,14 @@
 .package-grid {
   margin-top: 96px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 64px;
+}
+
+@media only screen and (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .package-card {
@@ -173,17 +185,4 @@
   border-radius: 100%;
   width: 250px;
   height: 250px;
-}
-
-@media only screen and (min-width: 768px) {
-  .feature-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-}
-
-@media only screen and (min-width: 1280px) {
-
 }
