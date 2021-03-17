@@ -9,7 +9,10 @@
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <script src="js/main.js"></script>
   <title>Small Business Web Design</title>
-  <link rel='icon' href='./assets/favicon.ico'>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
 </head>
 <body>
 
@@ -17,13 +20,13 @@
     <!-- HEADER -->
     <div class='header'>
       <div class='start'>
-        <img onclick="location.href='index.html'" class='logo' src='./assets/steezy.svg' alt='restaurant logo'>
+        <img onclick="location.href='index.html'" class='logo' src='./assets/steezy.svg' alt='steezy web designs logo'>
       </div>
       <div class='end'>
   
         <!-- NAVBAR -->
-        <div id='mobile-nav'>
-          <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()'>menu</span>
+        <div id='mobile-nav' aria-hidden="">
+          <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()' aria-label="Toggle Menu">menu</span>
           <div id='mobile-nav-tray'>
             <div id='mobile-nav-links'>
               <a class="text-dark" href='index.html'>Home</a>
@@ -55,11 +58,11 @@
           Making your job <b>easy.</b></p>
         <button onclick="location.href='./html/services.html'" class='action-button'>Learn More</button>
       </div>
-      <img id="hero-image" src="./assets/hero-img.png" alt="laptop desktop mobile phone illustration">
+      <img id="hero-image" src="./assets/hero-img.png" alt="An illustration of a laptop with code on the screen.">
     </div>
   </section>
 
-  <img id='divider' src="./assets/hero-divide.svg" width="100%" alt="">
+  <img id='divider' src="./assets/hero-divide.svg" width="100%" aria-hidden="true">
 
   <section class="services gutter padding-t padding-b">
     <div>
@@ -68,17 +71,17 @@
       <p class="text-center text-grey">At Steezy we craft enterprise level sites and put them in the hands of small business owners all over the United States. We build static sites with 100% hand-written code and styles resulting in high performance. With higher performance, comes more customers, which means more money in your pocket.</p>
       <div class="feature-grid">
         <div class="feature-item text-center">
-          <img src="./assets/programming.svg" alt="programming icon">
+          <img src="./assets/programming.svg" alt="programming icon" aria-hidden="true">
           <h4>Hand Coded Websites</h4>
           <p class="text-grey">Every line of code is carefully written by hand. Which produces a lightweight website. Wordpress and Wix sites are filled with unnecessary code and styles because a program is trying to do a programmer’s job. Google detects this extra bulk and ranks sites lower that are not efficient. Static websites will beat almost any Wordpress site.</p>
         </div>
         <div class="feature-item text-center">
-          <img src="./assets/running-man.svg" alt="running-man icon">
+          <img src="./assets/running-man.svg" alt="running-man icon" aria-hidden="true">
           <h4>Static Websites</h4>
           <p class="text-grey">Website load times matter. 40% of consumers will wait no more than three seconds before abandoning a site. This goes up to 74% when waiting five seconds on mobile. With our hand-coded static website your business website load times will be lightning fast.</p>
         </div>
         <div class="feature-item text-center">
-          <img src="./assets/platform.svg" alt="platform icon">
+          <img src="./assets/platform.svg" alt="platform icon" aria-hidden="true">
           <h4>Responsive Web Development</h4>
           <p class="text-grey">60% of web traffic happens on mobile phones. That means you need a site that looks and feels good on mobile. We got you covered.</p>
         </div>
@@ -89,8 +92,8 @@
         </div>
       </div>
     </div>
-    <img id="hexagon-one" src="./assets/hexagon.svg" alt=""> 
-    <img id="hexagon-two" src="./assets/hexagon.svg" alt="">
+    <img id="hexagon-one" src="./assets/hexagon.svg" aria-hidden="true"> 
+    <img id="hexagon-two" src="./assets/hexagon.svg" aria-hidden="true">
   </section>
 
   <section class=" gutter padding-t padding-b bg-dark text-secondary">
@@ -199,7 +202,7 @@
       <h6 class="text-center subheading">WHO WE ARE</h6>
       <h1 class="text-center">Steezy</h1>
       <div class="who-grid">
-        <img id='portrait' src="./assets/christian.jpg" alt="picture of me">
+        <img id='portrait' src="./assets/christian.jpg" alt="picture of Christian Brooks, sole developer of Steezy Web Designs">
         <p id='about-me' class="text-center">My name is Christian Brooks, I am a remote web developer. I started this business, because I saw a need and wanted to help provide for small businesses without the crippling price of a typical customized website service. I’ve spent 2 and a half years in the enterprise web development industry refining my skills, after learning how to build websites at UNC Charlotte’s Full-Stack Web Development Bootcamp.</p>
       </div>
     </div>
@@ -210,8 +213,8 @@
     <div class="footer-grid">
       <div class="footer-item">
         <h3>Contact</h3>
-        <span onclick="location.href='tel:803-389-4244'">Phone: (803) 389-4244</span>
-        <span>Email: christiandbrooks@gmail.com</span>
+        <span onclick="location.href='tel:803-389-4244'" aria-label="phone number">Phone: (803) 389-4244</span>
+        <span aria-label="email-address">Email: christiandbrooks@gmail.com</span>
       </div>
       <div class="footer-item">
         <h3>Navigation</h3>
@@ -232,7 +235,7 @@
 
   <!-- COPYRIGHT -->
   <section class='copyright gutter d-flex-center bg-dark text-secondary'>
-    <p>Copyright © 2021 Steezy Web Designs - All Rights Reserved</p>
+    <p aria-label="copyright">Copyright © 2021 Steezy Web Designs - All Rights Reserved</p>
   </section>
  
 </body>
