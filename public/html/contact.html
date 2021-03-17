@@ -50,23 +50,31 @@
     <h1 class="text-center">Contact</h1>
   </section>
 
-  <section class="gutter padding-t padding-b bg-light">
-    <div class="d-flex-center d-flex-row">
-      <span class='phone material-icons nudge-right'>call</span><h3 class="text-center margin-0">803-389-4244</h3>
-    </div>
-    <div class="d-flex-center d-flex-row padding-b">
-      <span class='email material-icons nudge-right'>email</span><p class="text-center">christiandbrooks@gmail.com</p>
-    </div>
-
-    <form data-netlify="true" method="POST" id="contact">
-      <div class="d-flex-row w-100">
-        <input class="w-50 nudge-right" type="text" name="name" placeholder="Name" required>
-        <input class="w-50" type="text" name="email" placeholder="Email" required>
+  <section class="gutter padding-t padding-b">
+    <div class="contact-grid">
+ 
+      <div id="contact-info" class="mx-auto">
+        <div class="contact-detail">
+          <span class='phone material-icons nudge-right'>call</span><h4 class="text-center margin-0">803-389-4244</h4>
+        </div>
+        <div class="contact-detail padding-b">
+          <span class='email material-icons nudge-right'>email</span><p class="text-center">christiandbrooks@gmail.com</p>
+        </div>
       </div>
-      <input class="nudge-up" type="text" name="subject" placeholder="Subject" required>
-      <textarea class="nudge-up" type="textarea" name="message" form="contact" rows="10" placeholder="Message" required></textarea>
-      <input class="nudge-up" type="submit" name="submit">
-    </form>
+
+      <div id="form-card">
+        <form data-netlify="true" method="POST" name='contact'>
+          <div class="d-flex-row w-100">
+            <input class="w-50 nudge-right" type="text" name="name" placeholder="Name" required>
+            <input class="w-50" type="email" name="email" placeholder="Email" required>
+          </div>
+          <input class="nudge-up" type="text" name="subject" placeholder="Subject" required>
+          <textarea class="nudge-up" type="textarea" name="message" rows="10" placeholder="Type a message..." required></textarea>
+          <input class="nudge-up" type="submit" name="submit">
+        </form>
+      </div>
+
+    </div>
 
   </section>
 

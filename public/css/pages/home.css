@@ -54,12 +54,6 @@
   margin-top: 64px;
 }
 
-#divider {
-  /* Fix a bleeding white line coming between the seems of this element and hero bg */
-  position: relative;
-  top: -1px;
-}
-
 .services {
   position: relative;
   overflow: hidden;
