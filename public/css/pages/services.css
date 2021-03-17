@@ -28,6 +28,16 @@ h3 {
   flex-direction: column;
 }
 
+.service:not(:first-child) {
+  border: none;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, orange, red);
+  border-top: 6px solid;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
 @media only screen and (min-width: 768px) {
   .service {
     flex-direction: row;
@@ -48,11 +58,4 @@ h3 {
     padding-left: 96px;
     text-align: left;
   }
-}
-
-.service:not(:first-child) {
-  border-top: 6px solid;
-  border-image-slice: 1;
-  border-width: 6px;
-  border-image-source: linear-gradient(to left, orange, red);
 }
