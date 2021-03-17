@@ -37,21 +37,21 @@
 }
 
 .text-secondary {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 
 .text-grey {
-  color: var(--grey-color);
+  color: var(--grey-color) !important;
 }
 
 .text-light {
-  color: var(--light-color);
+  color: var(--light-color) !important;
 }
 
 .text-dark {
-  color: var(--dark-color);
+  color: var(--dark-color) !important;
 }
 
 .text-accent {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
