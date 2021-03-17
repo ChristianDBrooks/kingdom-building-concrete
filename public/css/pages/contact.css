@@ -1,6 +1,30 @@
 @import url('../components/header.css');
 @import url('../components/navbar.css');
+@import url('../components/jumbo.css');
 @import url('../components/footer.css');
-@import url('../components/review-card.css');
 @import url('../components/button.css');
 
+.phone {
+  font-size: 36px !important;
+}
+
+input:not([type='submit']), textarea {
+  width: 100%;
+  box-shadow: -3px 0px var(--accent-color);
+  padding: 8px;
+  border: none;
+}
+
+input[type='submit'] {
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 8px;
+  background-color: transparent;
+}
+
+input[type='submit']:hover {
+  color: white;
+  background-color: var(--accent-color);
+}

@@ -29,14 +29,49 @@
   align-items: center;
 }
 
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .d-flex-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+
+.nudge-right {
+  margin-right: 16px;
+}
+.nudge-left {
+  margin-left: 16px;
+}
+.nudge-up {
+  margin-top: 16px;
+}
+.nudge-down {
+  margin-bottom: 16px;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .w-100 {
   width: 100%;
+}
+
+.w-50 {
+  width: 50%;
 }
 
 .flex-hr {

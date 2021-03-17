@@ -22,10 +22,10 @@
       <div class='end'>
   
         <!-- NAVBAR -->
-        <div class='mobile-navbar'>
-          <span id='mobile-navbar-menu-icon' class='material-icons' onclick='toggleNavbarMenu()'>menu</span>
-          <div id='mobile-navbar-menu'>
-            <div id='mobile-navbar-items'>
+        <div id='mobile-nav'>
+          <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()'>menu</span>
+          <div id='mobile-nav-tray'>
+            <div id='mobile-nav-links'>
               <a href='index.html'>Home</a>
               <a href='./html/services.html'>Services</a>
               <a href='./html/about.html'>About Us</a>
@@ -33,8 +33,8 @@
             </div>
           </div>
         </div>
-        <div class='desktop-navbar'>
-          <div id='desktop-navbar-items'>          
+        <div class='desktop-nav'>
+          <div id='desktop-nav-links'>          
             <a class='navlink-underline' href='index.html'>HOME</a>
             <a href='./html/services.html'>SERVICES</a>
             <a href='./html/about.html'>ABOUT</a>
@@ -59,7 +59,7 @@
     </div>
   </section>
 
-  <img src="./assets/hero-divide.svg" width="100%" alt="">
+  <img id='divider' src="./assets/hero-divide.svg" width="100%" alt="">
 
   <section class="services gutter padding-t padding-b">
     <div>

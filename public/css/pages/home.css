@@ -14,6 +14,12 @@
   justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero > .content {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .hero > .content {
     justify-content: space-between;
@@ -46,6 +52,12 @@
 .action-button {
   position: relative;
   margin-top: 64px;
+}
+
+#divider {
+  /* Fix a bleeding white line coming between the seems of this element and hero bg */
+  position: relative;
+  top: -1px;
 }
 
 .services {
@@ -129,14 +141,15 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .feature-grid {
+  .package-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .package-card {
   justify-self: center;
-  width: 360px;
+  width: 100%;
+  max-width: 400px;
   padding: 32px;
   border-radius: 10px;
 }
