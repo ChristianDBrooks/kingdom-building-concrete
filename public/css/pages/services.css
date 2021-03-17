@@ -1,38 +1,58 @@
 @import url('../components/header.css');
 @import url('../components/navbar.css');
 @import url('../components/footer.css');
+@import url('../components/button.css');
 @import url('../components/copyright.css');
 
-.services-grid {
-  margin-bottom: 96px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 144px 96px;
-  grid-template-areas: 
-  "."
-  "."
-  "four"
-  "three";
+h3 {
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
-img {
-  align-self: center;
-  width: 100%
+.action-button {
+  margin-bottom: 48px;
 }
 
-.p-title {
-  font-size: 2.2em;
+.service {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
 }
 
-#item-3 {grid-area: four;}
-
-#item-4 {grid-area: three;}
+.service-title {
+  display: flex;
+  flex-direction: column;
+}
 
 @media only screen and (min-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    ". ."
-    "three four";
+  .service {
+    flex-direction: row;
+    text-align: left;
   }
+
+  .service:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .service-title {
+    padding-right: 96px;
+    text-align: right;
+  }
+
+  .service:nth-child(even) .service-title {
+    padding-left: 96px;
+    text-align: left;
+  }
+}
+
+.service:not(:first-child) {
+  border-top: 6px solid;
+  border-image-slice: 1;
+  border-width: 6px;
+  border-image-source: linear-gradient(to left, orange, red);
 }

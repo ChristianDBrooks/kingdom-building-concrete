@@ -121,6 +121,14 @@
   padding-top: 96px;
 }
 
+.padding-r {
+  padding-right: 96px;
+}
+
+.padding-l {
+  padding-left: 96px;
+}
+
 .padding-b {
   padding-bottom: 96px;
 }
