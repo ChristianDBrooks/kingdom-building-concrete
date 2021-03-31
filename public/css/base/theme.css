@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
 
 :root {
-  --primary-font: 'Poppins', sans-serif;
-  --secondary-font: 'Montserrat', sans-serif
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Poppins', sans-serif
 }
 
-html {
+* {
+  font-family: var(--secondary-font); 
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--primary-font);
 }
+
+p {
+  font-family: var(--secondary-font); 
+ }
 
 .hero-heading {
   font-size: 96px;
