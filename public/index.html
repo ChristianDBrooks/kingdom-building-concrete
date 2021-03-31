@@ -8,7 +8,7 @@
   <link rel='stylesheet' href='./css/pages/home.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <script src="js/main.js"></script>
-  <title>Small Business Web Design</title>
+  <title>Steezy Starter</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <section class='bg-secondary gutter'>
+  <header class='bg-secondary gutter'>
     <!-- HEADER -->
     <div class='header'>
       <div class='start'>
@@ -30,214 +30,70 @@
           <div id='mobile-nav-tray'>
             <div id='mobile-nav-links'>
               <a class="text-dark" href='index.html'>Home</a>
-              <a href='./html/services.html'>Services</a>
-              <a href='./html/about.html'>About Us</a>
-              <a href='./html/contact.html'>Contact</a>
+              <a href='./html/example.html'>Example</a>
             </div>
           </div>
         </div>
         <div class='desktop-nav'>
           <div id='desktop-nav-links'>          
             <a class='navlink-underline' href='index.html'>HOME</a>
-            <a href='./html/services.html'>SERVICES</a>
-            <a href='./html/about.html'>ABOUT</a>
-            <a href='./html/contact.html'>CONTACT</a>
+            <a href='./html/example.html'>EXAMPLE</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- HERO -->
-  <section class='hero bg-dark gutter padding-t'>
-    <div class="content d-flex-row">
-      <div>
-        <h1 class='text-left hero-title'>Steezy.</h1>
-        <p class="hero-sub-title">We design <b>stylish</b> websites<br>
-          then build them from <b>scratch.</b><br>
-          Making your job <b>easy.</b></p>
-        <button onclick="location.href='./html/services.html'" class='action-button'>Learn More</button>
-      </div>
-      <img id="hero-image" src="./assets/hero-img.png" alt="An illustration of a laptop with code on the screen.">
+
+  <section class="padding-y bg-light">
+    <div class="gutter text-center">
+      <h1 class="margin-bottom page-heading text-center text-primary margin-0 padding-bottom">Theme Components</h1>
+      <p class="paragraph-la">
+        Below you will find all main wireframe components that can be used. The titles are self-explanatory, so you can use this page to set up topography and stylistic items.
+      </p>
+      <p class="paragraph-la">
+        To find an example of how all these wireframe items can be used in conjunction go to the example page <a class="text-accent" href="./html/example.html">here</a>.
+      </p>
     </div>
   </section>
 
-  <img id='divider' src="./assets/hero-divide.svg" width="100%" aria-hidden="true">
+  <!-- Content -->
+  <section class="padding-y">
+    <div class="gutter">
 
-  <section class="services gutter padding-t padding-b">
-    <div>
-      <h6 class="text-center subheading">WHAT WE DO</h6>
-      <h1 class="text-center">Services</h1>
-      <p class="text-center text-grey">At Steezy we craft enterprise level sites and put them in the hands of small business owners all over the United States. We build static sites with 100% hand-written code and styles resulting in high performance. With higher performance, comes more customers, which means more money in your pocket.</p>
-      <div class="feature-grid">
-        <div class="feature-item text-center">
-          <img src="./assets/programming.svg" alt="programming icon" aria-hidden="true">
-          <h4>Hand Coded Websites</h4>
-          <p class="text-grey">Every line of code is carefully written by hand. Which produces a lightweight website. Wordpress and Wix sites are filled with unnecessary code and styles because a program is trying to do a programmer’s job. Google detects this extra bulk and ranks sites lower that are not efficient. Static websites will beat almost any Wordpress site.</p>
-        </div>
-        <div class="feature-item text-center">
-          <img src="./assets/running-man.svg" alt="running-man icon" aria-hidden="true">
-          <h4>Static Websites</h4>
-          <p class="text-grey">Website load times matter. 40% of consumers will wait no more than three seconds before abandoning a site. This goes up to 74% when waiting five seconds on mobile. With our hand-coded static website your business website load times will be lightning fast.</p>
-        </div>
-        <div class="feature-item text-center">
-          <img src="./assets/platform.svg" alt="platform icon" aria-hidden="true">
-          <h4>Responsive Web Development</h4>
-          <p class="text-grey">60% of web traffic happens on mobile phones. That means you need a site that looks and feels good on mobile. We got you covered.</p>
-        </div>
-        <div class="feature-item text-center">
-          <img src="./assets/compass.svg" alt="compass drawing tool icon">
-          <h4>Custom Web Design</h4>
-          <p class="text-grey">We create personalized websites that are tailored exactly to what you need. Everything on your site should feel and function the way you want. 64% of customers with a bad experience on a website will purchase from a different store next time.</p>
-        </div>
-      </div>
-    </div>
-    <img id="hexagon-one" src="./assets/hexagon.svg" aria-hidden="true"> 
-    <img id="hexagon-two" src="./assets/hexagon.svg" aria-hidden="true">
-  </section>
-
-  <section class=" gutter padding-t padding-b bg-dark text-secondary">
-    <div>
-      <h6 class="text-center subheading">WHAT YOU GET</h6>
-      <h1 class="text-center">Details</h1>
-      <p id='offer-paragraph' class="text-center"><span class="paragraph-one text-accent">$0</span> down, <span class="paragraph-one text-accent">$150</span> a month for a 5 page small business website. If you need more than that, we can do customized pricing based on the amount of work, complexity, and time involved.</p>
-      <p class="text-center">You own your domain, content, listing, and profiles. Cancel anytime with no fees or hassle.</p>
-      <div class="details-grid">
-        <div class="detail text-right">
-          <div>
-            <h4>Web Design & Development</h4>
-            <p>Includes over 40 hours of design, development, and testing.</p>
-          </div>
-          <img src="./assets/feature-border.svg" />
-        </div>
-        <div class="detail">
-          <img src="./assets/feature-border.svg" />
-          <div>
-            <h4>Hosting Fees Included</h4>
-            <p>Hosting fees are included right in the monthly cost.</p>
-          </div>
-        </div>
-        <div class="detail text-right">
-          <div>
-            <h4>24/7 Customer Service</h4>
-            <p>Call anytime and talk straight to the lead developer.</p>
-          </div>
-          <img src="./assets/feature-border.svg" />
-        </div>
-        <div class="detail">
-          <img src="./assets/feature-border.svg" />
-          <div>
-            <h4>Unlimited Edits</h4>
-            <p>Change anything you want at any time and it will be done that day.</p>
-          </div>
-        </div>
-        <div class="detail text-right">
-          <div>
-            <h4>Citations & Listings</h4>
-            <p>It's important to have your website linked from other websites, like directories.</p>
-          </div>
-          <img src="./assets/feature-border.svg" />
-        </div>
-        <div class="detail">
-          <img src="./assets/feature-border.svg" />
-          <div>
-            <h4>Google Analytics</h4>
-            <p>We install Analytics for free to monitor traffic and where it comes from.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="gutter padding-t padding-b">
-    <div>
-      <h6 class="text-center subheading">OUR PLANS</h6>
-      <h1 class="text-center">Packages</h1>
-      <div class="package-grid">
-        <div class="package-card bg-light d-flex-center">
-          <div>
-            <h4 class="text-center">$150</h4>
-            <span>PER MONTH</span>
-          </div>
-          <p class="paragraph-one text-grey text-center">5 Pages</p>
-          <h2>Standard</h2>
-          <p class="paragraph-two text-grey text-center">
-            Unlimited Edits<br>
-            Includes Hosting<br>
-            24/7 Customer Service<br>
-            Lifetime Updates
-          </p>
-          <button onclick="location.href='./html/contact.html'" class="text-primary action-button">Learn More</button>
-        </div>
-        
-        <div class="package-card bg-light d-flex-center">
-          <div class="d-flex-row pricing">
-            <div>
-              <h4 class="text-center">$100</h4>
-              <span>DOWN</span>
-            </div>
-            <span class="plus-sign">+</span>
-            <div>
-              <h4 class="text-center">$150</h4>
-              <span>PER MONTH</span>
-            </div>
-          </div>
-          <p class="paragraph-one text-grey text-center">5 Pages + Logo Design</p>
-          <h2>Premium</h2>
-          <p class="paragraph-two text-grey text-center">
-            Includes everything in Standard<br>
-            2 revisions<br>
-            All File Formats<br>
-            Ready to use
-          </p>
-          <button onclick="location.href='./html/contact.html'" class="text-primary action-button">Learn More</button>
-        </div>
-      </div>
+      <!-- Hero Heading -->
+      <h1 class="padding-bottom hero-heading">Hero Heading</h1>
+  
+      <!-- Page Heading -->
+      <h1 class="padding-bottom page-heading">Page Heading</h1>
+  
+      <!-- Sub Page Heading -->
+      <h2 class="padding-bottom sub-page-heading">Sub Page Heading</h2>
+  
+      <!-- Body Heading -->
+      <h4 class="padding-bottom body-heading">Body Heading</h4>
+  
+      <!-- Extra Large Paragraph-->
+      <p class="padding-bottom paragraph-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
+      
+      <!-- Large Paragraph-->
+      <p class="padding-bottom paragraph-la">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
+      
+      <!-- Paragraph -->
+      <p class="padding-bottom paragraph-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
+  
+      <!-- Small Paragraph -->
+      <p class="padding-bottom paragraph-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsa! Quos animi illo quibusdam quis velit ea consequatur suscipit, architecto nesciunt illum nihil officia porro odit labore impedit doloribus voluptate veniam alias temporibus sed quam enim aspernatur laboriosam quo! Explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero, officia repellat corporis amet assumenda! Dolor velit nobis sequi repellendus.</p>
+  
+       <!-- Button Solid -->
+      <button class="button-solid">Solid Button</button>
+  
+       <!-- Button Outline -->
+      <button class="button-outline">Outline Button</button>
 
     </div>
   </section>
 
-  <section class="gutter padding-t padding-b bg-light">
-    <div>
-      <h6 class="text-center subheading">WHO WE ARE</h6>
-      <h1 class="text-center">Steezy</h1>
-      <div class="who-grid">
-        <img id='portrait' src="./assets/christian.jpg" alt="picture of Christian Brooks, sole developer of Steezy Web Designs">
-        <p id='about-me' class="text-center">My name is Christian Brooks, I am a remote web developer. I started this business, because I saw a need and wanted to help provide for small businesses without the crippling price of a typical customized website service. I’ve spent 2 and a half years in the enterprise web development industry refining my skills, after learning how to build websites at UNC Charlotte’s Full-Stack Web Development Bootcamp.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <section class='footer gutter padding-t bg-dark'>
-    <div class="footer-grid">
-      <div class="footer-item">
-        <h3>Contact</h3>
-        <span onclick="location.href='tel:803-389-4244'" aria-label="phone number">Phone: (803) 389-4244</span>
-        <span aria-label="email-address">Email: christiandbrooks@gmail.com</span>
-      </div>
-      <div class="footer-item">
-        <h3>Navigation</h3>
-        <a href='index.html'>Home</a>
-        <a href='./html/services.html'>Services</a>
-        <a href='./html/about.html'>About Us</a>
-        <a href='./html/contact.html'>Contact</a>
-      </div>
-      <div class="footer-item">
-        <h3>Services</h3>
-        <span>Web Design</span>
-        <span>Website Maintenance</span>
-        <span>Content Creation</span>
-        <span>Logo Design</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- COPYRIGHT -->
-  <section class='copyright gutter d-flex-center bg-dark text-secondary'>
-    <p aria-label="copyright">Copyright © 2021 Steezy Web Designs - All Rights Reserved</p>
-  </section>
- 
 </body>
 </html>
 <script src='./scripts/navbar.js'></script>
