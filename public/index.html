@@ -1,98 +1,167 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='UTF-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link rel='stylesheet' href='./css/base/styles.css'>
-  <link rel='stylesheet' href='./css/pages/home.css'>
-  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-  <script src="js/main.js"></script>
-  <title>Steezy Starter</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./css/base/styles.css'>
+    <link rel='stylesheet' href='./css/pages/index.css'>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <script src="js/main.js"></script>
+    <title>Kingdom Building Concrete</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
 </head>
 <body>
 
-  <header class='bg-secondary gutter'>
-    <!-- HEADER -->
-    <div class='header'>
-      <div class='start'>
-        <img onclick="location.href='index.html'" class='logo' src='./assets/steezy.svg' alt='steezy web designs logo'>
-      </div>
-      <div class='end'>
-  
-        <!-- NAVBAR -->
-        <div id='mobile-nav' aria-hidden="">
-          <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()' aria-label="Toggle Menu">menu</span>
-          <div id='mobile-nav-tray'>
-            <div id='mobile-nav-links'>
-              <a class="text-dark" href='index.html'>Home</a>
-              <a href='./html/example.html'>Example</a>
+    <!-- ================= -->
+    <!--      Header       -->
+    <!-- ================= -->
+
+    <header class='bg-secondary gutter'>
+        <div class='header'>
+            <div class='start'>
+                <img onclick="location.href='index.html'" class='logo' src='./assets/KBC-logo-yellow.jpg' alt='kingdom building concrete logo'>
             </div>
-          </div>
+            <div class='end'>
+                <div id='mobile-nav' aria-hidden="">
+                    <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()' aria-label="Toggle Menu">menu</span>
+                    <div id='mobile-nav-tray'>
+                        <div id='mobile-nav-links'>
+                            <a class="text-dark" href='index.html'>Home</a>
+                            <a href='#'>Services</a>
+                            <a href='#'>Gallery</a>
+                            <a href='#'>Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='desktop-nav'>
+                    <div id='desktop-nav-links'>                    
+                        <a class='navlink-underline' href='index.html'>Home</a>
+                        <a href='#'>Services</a>
+                        <a href='#'>Gallery</a>
+                        <a href='#'>Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class='desktop-nav'>
-          <div id='desktop-nav-links'>          
-            <a class='navlink-underline' href='index.html'>HOME</a>
-            <a href='./html/example.html'>EXAMPLE</a>
-          </div>
+    </header>
+
+    <!-- ================= -->
+    <!--       Hero        -->
+    <!-- ================= -->
+
+    <section id='hero' class="padding-y">
+        <div class='blackbox text-light gutter'>
+            <h1>Best Concrete Finishers In The Carolinas</h1>
+            <p>Any type of concrete service, grading, asphalt/patch work and repair. Based in Charlotte, NC we provide our services across the east cost in NC, SC, GA, VA, MA, and DC.</p>
+            <button id='call-button' class="button-solid">Call Now</button>
         </div>
-      </div>
-    </div>
-  </header>
+    </section>
+
+    <!-- ================= -->
+    <!--     Services      -->
+    <!-- ================= -->
+
+    <section class="padding-y">
+        <div class='text-primary gutter'>
+            <div class="text-center">
+                <span>What We Do</span>
+                <h1>Our <span class="text-accent">Services</span></h1>
+            </div>
+
+            <ul id='service-group'>
+                <li class="service">
+                    <h2>Concrete</h2>
+                    <p>Everything from driveways to patios, we handle everything concrete.</p>
+                    <button class="button-solid">Learn More</button>
+                </li>
+
+                <li class="service">
+                    <h2>Stamp Design</h2>
+                    <p>Many patterns available, all precisley planned with the highest craftmanship.</p>
+                    <button class="button-solid">Learn More</button>
+                </li>
+
+                <li class="service">
+                    <h2>Demo/Repair</h2>
+                    <p>Whether you need something removed, or fixed, we’re who you need.</p>
+                    <button class="button-solid">Learn More</button>
+                </li>
+
+                <li class="service">
+                    <h2>Overlay</h2>
+                    <p>We can provide thin decorative finishers or coats for repair.</p>
+                    <button class="button-solid">Learn More</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ================= -->
+    <!--       About       -->
+    <!-- ================= -->
 
 
-  <section class="padding-y bg-light">
-    <div class="gutter text-center">
-      <h1 class="margin-bottom page-heading text-center text-primary margin-0 padding-bottom">Theme Components</h1>
-      <p class="paragraph-la">
-        Below you will find all main wireframe components that can be used. The titles are self-explanatory, so you can use this page to set up topography and stylistic items.
-      </p>
-      <p class="paragraph-la">
-        To find an example of how all these wireframe items can be used in conjunction go to the example page <a class="text-accent" href="./html/example.html">here</a>.
-      </p>
-    </div>
-  </section>
+    <section id='about-details' class="padding-y">
+        <div class='text-primary'>
+            <div class="text-center gutter">
+                <span>Who We Are</span>
+                <h1><span class="text-accent">About</span> Us</h1>
+            </div>
 
-  <!-- Content -->
-  <section class="padding-y">
-    <div class="gutter">
+            <div id="yellow">
+                <img id='about-img' src="./assets/concrete-workers.png" alt="group of construction workers and engineers surveying a work site and planning">
+            </div>
 
-      <!-- Hero Heading -->
-      <h1 class="padding-bottom hero-heading">Hero Heading</h1>
-  
-      <!-- Page Heading -->
-      <h1 class="padding-bottom page-heading">Page Heading</h1>
-  
-      <!-- Sub Page Heading -->
-      <h2 class="padding-bottom sub-page-heading">Sub Page Heading</h2>
-  
-      <!-- Body Heading -->
-      <h4 class="padding-bottom body-heading">Body Heading</h4>
-  
-      <!-- Extra Large Paragraph-->
-      <p class="padding-bottom paragraph-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
-      
-      <!-- Large Paragraph-->
-      <p class="padding-bottom paragraph-la">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
-      
-      <!-- Paragraph -->
-      <p class="padding-bottom paragraph-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
-  
-      <!-- Small Paragraph -->
-      <p class="padding-bottom paragraph-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsa! Quos animi illo quibusdam quis velit ea consequatur suscipit, architecto nesciunt illum nihil officia porro odit labore impedit doloribus voluptate veniam alias temporibus sed quam enim aspernatur laboriosam quo! Explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero, officia repellat corporis amet assumenda! Dolor velit nobis sequi repellendus.</p>
-  
-       <!-- Button Solid -->
-      <button class="button-solid">Solid Button</button>
-  
-       <!-- Button Outline -->
-      <button class="button-outline">Outline Button</button>
+            <div class="text-center gutter">
+                <h2 class="margin-top">The best concrete company in the Carolinas.</h2>
+                <p>We are commited to your customer satisfaction guaranteed</p>
+            </div>
 
-    </div>
-  </section>
+            <div class="gutter">
+                <div style="display: flex">
+                    <div id="detail-group">
+                        <div class="detail">
+                            <span class="img-wrapper">
+                                <img src="./assets/ribbon-icon.png" aria-hidden="true" alt="">
+                            </span>
+                            <span>25+ Years Experience</span>
+                        </div>
+                        <div class="detail">
+                            <span class="img-wrapper">
+                                <img src="./assets/like-icon.png" aria-hidden="true">
+                            </span>
+                            <span>Great Customer Service</span>
+                        </div>
+                        <div class="detail">
+                            <span class="img-wrapper">
+                                <img src="./assets/checkmark-icon.png" aria-hidden="true">
+                            </span>
+                            <span>Reliable</span>
+                        </div>
+                        <div class="detail">
+                            <span class="img-wrapper">
+                                <img src="./assets/hourglass-icon.png" aria-hidden="true">
+                            </span>
+                            <span>On Time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= -->
+    <!--      Gallery      -->
+    <!-- ================= -->
+
+    <!-- ================= -->
+    <!--      Reviews      -->
+    <!-- ================= -->
+
 
 </body>
 </html>

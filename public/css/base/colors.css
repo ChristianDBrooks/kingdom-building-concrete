@@ -3,9 +3,9 @@
   --primary-color: #000000;
   --secondary-color: #FFFFFF;
   --grey-color: #777777;
-  --light-color: #EEEEEE;
+  --light-color: #f6f6f6;
   --dark-color: #1A1A1A;
-  --accent-color: #FF7301;
+  --accent-color: #FFD600;
 }
 
 .bg-primary {

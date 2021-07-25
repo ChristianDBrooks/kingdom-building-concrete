@@ -1,0 +1,81 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+
+#hero {
+    background-image: url('./../../assets/hero.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#hero h1 {
+    margin-top: 0;
+}
+
+.blackbox {
+    background-color: rgba(0,0,0,.75);
+    padding: 36px;
+}
+
+#call-button {
+    margin-top: 16px;
+}
+
+#service-group {
+   padding: 0;
+   margin-top: 64px;
+}
+
+.service {
+    text-align: center;
+    box-shadow: 0 0 15px 3px rgb(0 0 0 / 9%);
+    list-style-type: none;
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.service:not(:first-child) {
+    margin-top: 15px;
+}
+
+#about-details {
+    background-color: var(--light-color);
+}
+
+#yellow {
+    background-color: var(--accent-color);
+    padding: 48px 0;
+    margin: 48px 0;
+}
+
+#about-img {
+    border-radius: 0 230px 230px 0;
+    width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#detail-group {
+    padding-left: 12px;
+    margin: 0 auto;
+}
+
+.detail {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.detail img {
+    height: 36px;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.img-wrapper {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+}
+
+/* .detail span {
+    margin: auto 0;
+} */
