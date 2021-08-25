@@ -1,42 +1,51 @@
 @import url('../components/header.css');
 @import url('../components/navbar.css');
-@import url('../components/footer.css');
-@import url('../components/copyright.css');
 
-.services-grid {
-  margin-bottom: 96px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 144px 96px;
-  grid-template-areas: 
-  "."
-  "."
-  "four"
-  "three";
+#hero {
+    background-image: url('./../../assets/hero.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
 
-img {
-  align-self: center;
-  width: 100%
+#hero h1 {
+    margin-top: 0;
 }
 
-.p-title {
-  font-size: 2.2em;
+.blackbox {
+    background-color: rgba(0,0,0,.5);
+    padding: 36px;
+    border-bottom: 8px solid var(--accent-color);
 }
 
-p {
-  font-size: 1.1em;
+.img-left {
+    border-radius: 15px;
+    position: relative;
+    left: -20px;
+    height: 150px;
+    box-shadow: var(--shadow);
+    object-fit: cover;
 }
 
-#item-3 {grid-area: four;}
+.img-right {
+    border-radius: 15px;
+    position: relative;
+    right: -20px;
+    height: 150px;
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
 
-#item-4 {grid-area: three;}
+.service-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
 
-@media only screen and (min-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    ". ."
-    "three four";
-  }
+.divider {
+    background: var(--accent-color);
+    opacity: 50%;
+    width: calc(100% - 24px * 2);
+    margin: 48px auto;
+    height: 6px;
+    border-radius: 15px;
 }

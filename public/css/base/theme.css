@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-font: 'Poppins', sans-serif
+}
+
+* {
+  font-family: var(--primary-font); 
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.bigger-paragraph {
+    font-size: 1.5em
+}
+
+.button-solid {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.button-solid:hover {
+  filter: brightness(80%);
+}
+
+.button-outline {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-outline:hover {
+  filter: brightness(80%);
+}
+

@@ -1,8 +1,8 @@
-function toggleNavbarMenu() {
-  let mobileMenuIcon = document.getElementById("mobile-navbar-menu-icon");
-  let navbarMenu = document.getElementById("mobile-navbar-menu");
-  navbarMenu.classList.toggle('show');
-  mobileMenuIcon.textContent = navbarMenu.classList.contains('show') ? 'clear' : 'menu';
+function toggleNavbarTray() {
+  let mobileMenuIcon = document.getElementById("mobile-nav-icon");
+  let mobileNav = document.getElementById("mobile-nav");
+  mobileNav.classList.toggle('show');
+  mobileMenuIcon.textContent = mobileNav.classList.contains('show') ? 'clear' : 'menu';
 }
 
 function toggleMobileDropdown(targetId) {

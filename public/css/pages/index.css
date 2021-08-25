@@ -1,0 +1,160 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+
+#hero {
+    background-image: url('./../../assets/hero.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#hero h1 {
+    margin-top: 0;
+}
+
+.blackbox {
+    background-color: rgba(0,0,0,.75);
+    padding: 36px;
+}
+
+#call-button {
+    margin-top: 16px;
+    width: 100%;
+}
+
+#service-group {
+   padding: 0;
+   margin-top: 64px;
+}
+
+.service {
+    text-align: center;
+    box-shadow: var(--shadow);
+    list-style-type: none;
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.service:not(:first-child) {
+    margin-top: 15px;
+}
+
+#about-details {
+    background-color: var(--light-color);
+}
+
+#yellow {
+    background-color: var(--accent-color);
+    padding: 48px 0;
+    margin: 48px 0;
+}
+
+#about-img {
+    border-radius: 0 230px 230px 0;
+    width: 90%;
+    box-shadow: var(--shadow);
+}
+
+#detail-group {
+    padding-left: 12px;
+    margin: 0 auto;
+}
+
+.detail {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.detail img {
+    height: 36px;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.img-wrapper {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+}
+
+/
+/* =========== */
+/*   Divider   */
+/* =========== */
+
+.custom-shape-divider-top-1627262508 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1627262508 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1627262508 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1627262508 svg {
+        width: calc(100% + 1.3px);
+        height: 71px;
+    }
+}
+
+#projects > img:not(:first-of-type) {
+    margin-top: 24px
+}
+
+#projects > img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    : var(--shadow);
+}
+
+#gallery-btn {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+#reviews:before {
+    content: url('./../../assets/quote-left.png');
+    position: absolute;
+    top: 0px;
+    right: 75px;
+    opacity: 70%;
+}
+
+#reviews:after {
+    content: url('./../../assets/quote-right.png');
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+    opacity: 70%;
+}
+
+.review-card:not(:first-of-type) {
+    padding-top: 24px;
+}
+
+.review-card:not(:last-of-type) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.divider {
+    min-height: 20px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: var(--accent-color);
+}

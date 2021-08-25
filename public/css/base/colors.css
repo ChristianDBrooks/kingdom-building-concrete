@@ -1,11 +1,12 @@
 
 :root {
   --primary-color: #000000;
-  --secondary-color: #ffffff;
-  --accent-color: #096ED8;
-  --accent-dark-color: #074F9D;
-  --accent-light-color: #288BF6;
-  --darkgrey-color: #151515;
+  --secondary-color: #FFFFFF;
+  --grey-color: #777777;
+  --light-color: #f6f6f6;
+  --dark-color: #1A1A1A;
+  --accent-color: #FFD600;
+  --shadow: 0 0 15px 3px rgb(0 0 0 / 9%);
 }
 
 .bg-primary {
@@ -16,32 +17,42 @@
   background-color: var(--secondary-color);
 }
 
-.bg-accent {
-  background-color: var(--accent-color);
+.bg-grey {
+  background-color: var(--grey-color);
 }
-.bg-accent-dark {
-  background-color: var(--accent-dark-color);
-}
-.bg-accent-light {
-  background-color: var(--accent-light-color);
+
+.bg-light {
+  background-color: var(--light-color);
 }
 
 .bg-dark {
-  background-color: var(--darkgrey-color);
+  background-color: var(--dark-color);
 }
 
-.text-secondary {
-  color: var(--secondary-color);
+.bg-accent {
+  background-color: var(--accent-color);
 }
 
 .text-primary {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
-.text-accent {
-  color: var(--accent-color);
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.text-grey {
+  color: var(--grey-color) !important;
+}
+
+.text-light {
+  color: var(--light-color) !important;
 }
 
 .text-dark {
-  color: var(--darkgrey-color);
+  color: var(--dark-color) !important;
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
 }

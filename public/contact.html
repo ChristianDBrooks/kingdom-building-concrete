@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='../css/base/styles.css'>
+  <link rel='stylesheet' href='../css/pages/contact.css'>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <script src="js/main.js"></script>
+  <title>Steezy Web Designs - Contact</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+</head>
+<body>
+
+    <!-- ================= -->
+    <!--      Header       -->
+    <!-- ================= -->
+
+    <header class='bg-secondary gutter'>
+        <div class='header'>
+            <div class='start'>
+                <img onclick="location.href='index.html'" class='logo' src='./assets/KBC-logo-yellow.jpg' alt='kingdom building concrete logo'>
+            </div>
+            <div class='end'>
+                <div id='mobile-nav' aria-hidden="">
+                    <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()' aria-label="Toggle Menu">menu</span>
+                    <div id='mobile-nav-tray'>
+                        <div id='mobile-nav-links'>
+                            <a href='index.html'>Home</a>
+                            <a href="services.html">Services</a>
+                            <a href='gallery.html'>Gallery</a>
+                            <a class="text-dark" href='contact.html'>Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='desktop-nav'>
+                    <div id='desktop-nav-links'>                    
+                        <a href='index.html'>Home</a>
+                        <a href="services.html">Services</a>
+                        <a href='gallery.html'>Gallery</a>
+                        <a class="text-dark" href='contact.html'>Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= -->
+    <!--       Hero        -->
+    <!-- ================= -->
+
+    <section id='hero' class="padding-y">
+        <div class='blackbox text-light gutter'>
+            <h1 class="text-accent">Contact</h1>
+            <p>Have a question? Need a quote? We’re happy to help.</p>
+        </div>
+    </section>
+
+    <!-- ================= -->
+    <!--   Contact Form    -->
+    <!-- ================= -->
+
+    <section class="padding-y">
+        <div class="gutter">
+
+            <h3>Contact Form</h3>
+            <p>Fill out the form below to send a message to Kingdom Building Concrete.</p>
+    
+            <div class="contact-grid">
+                
+                <div id="contact-info" class="mx-auto margin-top margin-bottom">
+                    <div class="contact-detail" onclick="location.href='tel:704-589-3711'">
+                        <span class='phone material-icons margin-right'>call</span><h4 class="text-center margin-0">(704) 589-3711</h4>
+                    </div>
+                    <div class="contact-detail">
+                        <span class='email material-icons margin-right'>email</span><p class="text-center">kbcconcrete@gmail.com</p>
+                    </div>
+                </div>
+              
+                <div id="form-card">
+                    <form data-netlify="true" method="POST" name='contact'>
+                        <div class="d-flex-row w-100">
+                            <input class="w-50 margin-right" type="text" name="firstName" placeholder="First Name" required>
+                            <input class="w-50" type="text" name="lastName" placeholder="Last Name" required>
+                        </div>
+                        <div class="d-flex-row w-100 margin-top">
+                            <input class="w-50 margin-right" type="email" name="email" placeholder="Email" required>
+                            <input class="w-50" type="number" name="phone" placeholder="Phone #" required>
+                        </div>
+                        <input class="margin-top" type="text" name="subject" placeholder="Subject" required>
+                        <textarea class="margin-top" type="textarea" name="message" rows="10" placeholder="Type a message..." required></textarea>
+                        <input class="margin-top" type="submit" name="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= -->
+    <!--      Footer       -->
+    <!-- ================= -->
+
+    <section>
+        <div class="gutter padding-y bg-dark text-secondary text-center">
+            <h3 class="weight-medium">Contact</h3>
+            <ul style="list-style-type: none; padding: 0">
+                <li>Greg Massey</li>
+                <li>(704) 589-3711</li>
+                <li>kbcconcrete@gmail.com</li>
+            </ul>
+        </div>
+        <div class="gutter padding-y bg-primary text-center text-light">
+            <h3 class="weight-medium" style>Navigation</h3>
+            <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='services.html'>Services</a></li>
+                <li><a href='gallery.html'>Gallery</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+            <h3 class="weight-medium">services</h3>
+            <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
+                <li>Concrete</li>
+                <li>Drive Ways</li>
+                <li>Patios</li>
+                <li>Stamp Design</li>
+                <li>Demo / Repair</li>
+                <li>Asphalt Patching</li>
+                <li>Asphalt Repair</li>
+                <li>Overlay</li>
+                <li>Anything Else</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
+<script src='./scripts/navbar.js'></script>
