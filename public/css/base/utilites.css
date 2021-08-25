@@ -168,6 +168,14 @@
   text-align: right;
 }
 
-.text-bold {
+.weight-light {
+  font-weight: 300;
+}
+
+.weight-medium {
+  font-weight: 500;
+}
+
+.weight-bold {
   font-weight: 700;
 }

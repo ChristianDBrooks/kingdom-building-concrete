@@ -1,0 +1,83 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+
+
+#hero {
+    background-image: url('./../../assets/hero.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#hero h1 {
+    margin-top: 0;
+}
+
+.blackbox {
+    background-color: rgba(0,0,0,.5);
+    padding: 36px;
+    border-bottom: 8px solid var(--accent-color);
+}
+
+.phone {
+  font-size: 24px !important;
+  cursor: pointer;
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#contact-info {
+  grid-area: contact;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "contact"
+    ".";
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    ". contact";
+  }
+}
+
+#form-card {
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0, 10%);
+  padding: 24px;
+}
+
+form > * {
+  font-family: "Poppins", sans-serif;
+}
+
+input:not([type='submit']), textarea {
+  background-color: var(--light-color);
+  width: 100%;
+  box-shadow: -3px 0px var(--accent-color);
+  padding: 8px;
+  border: none;
+}
+
+input[type='submit'] {
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 8px;
+  background-color: transparent;
+}
+
+input[type='submit']:hover {
+  color: white;
+  background-color: var(--accent-color);
+}

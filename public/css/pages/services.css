@@ -1,0 +1,51 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+
+#hero {
+    background-image: url('./../../assets/hero.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#hero h1 {
+    margin-top: 0;
+}
+
+.blackbox {
+    background-color: rgba(0,0,0,.5);
+    padding: 36px;
+    border-bottom: 8px solid var(--accent-color);
+}
+
+.img-left {
+    border-radius: 15px;
+    position: relative;
+    left: -20px;
+    height: 150px;
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
+
+.img-right {
+    border-radius: 15px;
+    position: relative;
+    right: -20px;
+    height: 150px;
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
+
+.service-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.divider {
+    background: var(--accent-color);
+    opacity: 50%;
+    width: calc(100% - 24px * 2);
+    margin: 48px auto;
+    height: 6px;
+    border-radius: 15px;
+}
