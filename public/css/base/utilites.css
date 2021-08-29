@@ -1,17 +1,25 @@
 @import url('./colors.css');
 @import url('./theme.css');
 
+:root {
+  --spacing: 72px;
+}
+
 /* Gutters */
 
 .gutter {
-  padding-left: 24px !important;
-  padding-right: 24px !important;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 @media only screen and (min-width: 768px) {
   .gutter {
     max-width: 1200px;
     margin: auto;
+  }
+
+  :root {
+    --spacing: 100px;
   }
 }
 
@@ -70,24 +78,24 @@
 /* Margin and Padding */
 
 .padding-top {
-  padding-top: 72px;
+  padding-top: var(--spacing);
 }
 
 .padding-right {
-  padding-right: 72px;
+  padding-right: var(--spacing);
 }
 
 .padding-left {
-  padding-left: 72px;
+  padding-left: var(--spacing);
 }
 
 .padding-bottom {
-  padding-bottom: 72px;
+  padding-bottom: var(--spacing);
 }
 
 .padding-y {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
 }
 
 .margin-right {

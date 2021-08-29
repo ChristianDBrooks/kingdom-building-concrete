@@ -1,5 +1,6 @@
 @import url('../components/header.css');
 @import url('../components/navbar.css');
+@import url('../components/footer.css');
 
 #hero {
     background-image: url('./../../assets/hero.png');
