@@ -20,5 +20,72 @@
 }
 
 .gallery-thumbnail {
-    width: 100vw;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .blackbox {
+        width: 75%;
+        text-align: left;
+    }
+
+
+    .gallery-thumbnail {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+        gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "pic-1 pic-1 pic-2"
+          "pic-3 pic-5 pic-6"
+          "pic-4 pic-5 pic-7"
+          "pic-8 pic-9 pic-9";
+      }
+      
+    .pic-1 { grid-area: pic-1; }
+    .pic-2 { grid-area: pic-2; }
+    .pic-3 { grid-area: pic-3; }
+    .pic-4 { grid-area: pic-4; }
+    .pic-5 { grid-area: pic-5; }
+    .pic-6 { grid-area: pic-6; }
+    .pic-7 { grid-area: pic-7; }
+    .pic-8 { grid-area: pic-8; }
+    .pic-9 { grid-area: pic-9; }
+
+    .pic-1 > a > img { 
+        border-top-left-radius: 10px;
+    }
+
+    .pic-2 > a > img { 
+        border-top-right-radius: 10px;
+    }
+
+    .pic-8 > a > img { 
+        border-bottom-left-radius: 10px;
+    }
+
+    .pic-9 > a > img { 
+        border-bottom-right-radius: 10px;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
