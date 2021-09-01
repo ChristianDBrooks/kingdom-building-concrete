@@ -1,5 +1,6 @@
 @import url('../components/header.css');
 @import url('../components/navbar.css');
+@import url('../components/footer.css');
 
 #hero {
     background-image: url('./../../assets/hero.png');
@@ -39,14 +40,13 @@
     margin-top: 15px;
 }
 
-#about-details {
+.yellow-desktop {
     background-color: var(--light-color);
 }
 
-#yellow {
+.yellow-mobile {
     background-color: var(--accent-color);
-    padding: 48px 0;
-    margin: 48px 0;
+    padding: var(--spacing) 0;
 }
 
 #about-img {
@@ -55,14 +55,10 @@
     box-shadow: var(--shadow);
 }
 
-#detail-group {
-    padding-left: 12px;
-    margin: 0 auto;
-}
-
 .detail {
     font-weight: 700;
     margin-bottom: 16px;
+    display: flex;
 }
 
 .detail img {
@@ -77,7 +73,6 @@
     text-align: center;
 }
 
-/
 /* =========== */
 /*   Divider   */
 /* =========== */
@@ -110,21 +105,25 @@
     }
 }
 
-#projects > img:not(:first-of-type) {
+#gallery .slot:not(:first-of-type) {
     margin-top: 24px
 }
 
-#projects > img {
+.slot > img {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    : var(--shadow);
+    box-shadow: var(--shadow);
 }
 
-#gallery-btn {
+#gallery-btn-mobile {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 24px;
+}
+
+#gallery-btn-desktop {
+    display: none;
 }
 
 #reviews:before {
@@ -158,3 +157,166 @@
     border-radius: 100%;
     background-color: var(--accent-color);
 }
+
+#about-info {
+    padding: var(--spacing) 0;
+}
+
+.details-title {
+    text-align: center;
+}
+
+#about-title {
+    padding: var(--spacing) 0;
+    text-align: center;
+}
+
+#bio {
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+}
+
+#bio-pictures {
+    display: none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .blackbox.gutter {
+        margin: 0;
+        width: 50%;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    .yellow-mobile {
+        background-color: transparent;
+    }
+
+    .yellow-desktop {
+        background-color: var(--accent-color);
+        background-image: -webkit-linear-gradient(20deg, var(--accent-color) 40%, var(--light-color) 40%);
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .details-title {
+        text-align: left;
+    }
+
+    #detail-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 0;
+        font-size: 24px;
+    }
+
+    #about-info {
+        max-width: 600px;
+        margin-right: auto;
+    }
+
+    #about-title {
+        padding-bottom: 0;
+    }
+
+    #bio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #bio-pictures {
+        display: block;
+        position: relative;
+        margin-left: var(--spacing);
+        min-width: 375px;
+        max-height: 475px;
+    }
+
+    #bio-pic-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+    }
+    #bio-pic-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+    }
+
+    #decor-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    #decor-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: min-content;
+        gap: 10px;
+    }
+
+    .slot > img {        
+        object-fit: cover;
+        width: 200px;
+        height: 300px;
+        border-radius: 0;
+    }
+
+    .slot:nth-child(1) {
+        position: relative; bottom: 15px;
+    }
+    .slot:nth-child(3) {
+        position: relative; bottom: 30px;
+    }
+
+    #gallery-btn-mobile {
+        display: none;
+    }
+
+    #gallery-btn-desktop {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    #service-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    .service:not(:first-child) {
+        margin-top: 0px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

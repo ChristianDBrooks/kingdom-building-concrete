@@ -39,7 +39,7 @@
                 </div>
                 <div class='desktop-nav'>
                     <div id='desktop-nav-links'>                    
-                        <a class="text-dark" href='index.html'>Home</a>
+                        <a class="text-accent" href='index.html'>Home</a>
                         <a href="Services.html">Services</a>
                         <a href='gallery.html'>Gallery</a>
                         <a href='contact.html'>Contact</a>
@@ -57,7 +57,7 @@
         <div class='blackbox text-light gutter'>
             <h2>Best Concrete Finishers In The Carolinas</h2>
             <p>Any type of concrete service, grading, asphalt/patch work and repair. Based in Charlotte, NC we provide our services across the east coast in NC, SC, GA, VA, MA, and DC.</p>
-            <button id='call-button' class="button-solid">Call Now</button>
+            <button id='call-button' class="button-solid" onclick="location.href='tel:704-589-3711'">Call Now</button>
         </div>
     </section>
 
@@ -76,25 +76,25 @@
                 <li class="service">
                     <h3>Concrete</h3>
                     <p>Everything from driveways to patios, we handle everything concrete.</p>
-                    <button class="button-solid">Learn More</button>
+                    <a class="button-solid margin-top" href="./services.html">Learn More</a>
                 </li>
 
                 <li class="service">
                     <h3>Stamp Design</h3>
                     <p>Many patterns available, all precisley planned with the highest craftmanship.</p>
-                    <button class="button-solid">Learn More</button>
+                    <a class="button-solid margin-top" href="./services.html">Learn More</a>
                 </li>
 
                 <li class="service">
                     <h3>Demo/Repair</h3>
                     <p>Whether you need something removed, or fixed, we’re who you need.</p>
-                    <button class="button-solid">Learn More</button>
+                    <a class="button-solid margin-top" href="./services.html">Learn More</a>
                 </li>
 
                 <li class="service">
                     <h3>Overlay</h3>
                     <p>We can provide thin decorative finishers or coats for repair.</p>
-                    <button class="button-solid">Learn More</button>
+                    <a class="button-solid margin-top" href="./services.html">Learn More</a>
                 </li>
             </ul>
         </div>
@@ -105,25 +105,23 @@
     <!-- ================= -->
 
 
-    <section id='about-details' class="padding-y">
-        <div class='text-primary'>
-            <div class="text-center gutter">
-                <span class="weight-light">Who We Are</span>
-                <h2><span class="text-accent">About</span> Us</h2>
-            </div>
+    <section id='about-details' class="yellow-desktop">
+        <div id='about-title' class="gutter">
+            <span class="weight-light">Who We Are</span>
+            <h2><span class="text-accent">About</span> Us</h2>
+        </div>
 
-            <div id="yellow">
+        <div class="about-grid">
+            <div class="yellow-mobile">
                 <img id='about-img' src="./assets/concrete-workers.png" alt="group of construction workers and engineers surveying a work site and planning">
             </div>
-
-            <div class="text-center gutter">
-                <h2 class="margin-top">The best concrete company in the Carolinas.</h2>
-                <p style="margin: 40px 0;">We are commited to your customer satisfaction guaranteed</p>
-            </div>
-
-            <div class="gutter">
-                <div style="display: flex">
-                    <div id="detail-group">
+            <div id="about-info">
+                <div class="details-title gutter">
+                    <h2 class="margin-top">The best concrete company in the Carolinas.</h2>
+                    <p style="margin: 40px 0; font-weight: 300; font-size: 1.25em;">We are commited to your customer satisfaction guaranteed</p>
+                </div>
+                <div id="details-grid">
+                    <div id="detail-group" class="gutter">
                         <div class="detail">
                             <span class="img-wrapper">
                                 <img src="./assets/ribbon-icon.png" aria-hidden="true" alt="">
@@ -158,11 +156,19 @@
     <!--       Bio         -->
     <!-- ================= -->
 
-    <section class="padding-y gutter">
-        <h2>Specializing In <span class="text-accent">Everything</span> Concrete</h2>
-        <p>    The owner of KBC, Greg Massey, started finishing concrete at the age of 12 as he stepped into the family trade. With over 30 years of experience, Greg has built Kingdom Building Concrete passing along the skills and passion to his 10+ employees. </p>
-        <p>    KBC’s expertise and and passion sets them apart from the rest. No matter what the project or need, KBC will go the extra mile to ensure the satisfaction of every customer. The owner of KBC, Greg Massey, started finishing concrete at the age of 12 as he stepped into the family trade. With over 30 years of experience, Greg has built Kingdom Building Concrete passing along the skills and passion to his 10+ employees. </p>
-        <p>    KBC’s expertise and and passion sets them apart from the rest. No matter what the project or need, KBC will go the extra mile to ensure the satisfaction of every customer.</p>
+    <section id="bio" class="gutter">
+        <div id="bio-content">
+            <h2>Specializing In <span class="text-accent">Everything</span> Concrete</h2>
+            <p>    The owner of KBC, Greg Massey, started finishing concrete at the age of 12 as he stepped into the family trade. With over 30 years of experience, Greg has built Kingdom Building Concrete passing along the skills and passion to his 10+ employees. </p>
+            <p>    KBC’s expertise and and passion sets them apart from the rest. No matter what the project or need, KBC will go the extra mile to ensure the satisfaction of every customer. The owner of KBC, Greg Massey, started finishing concrete at the age of 12 as he stepped into the family trade. With over 30 years of experience, Greg has built Kingdom Building Concrete passing along the skills and passion to his 10+ employees. </p>
+            <p>    KBC’s expertise and and passion sets them apart from the rest. No matter what the project or need, KBC will go the extra mile to ensure the satisfaction of every customer.</p>
+        </div>
+        <div id="bio-pictures">
+            <img id="bio-pic-1" src="./assets/concrete-1.jpg" alt="">
+            <img id="bio-pic-2" src="./assets/concrete-2.jpg" alt="">
+            <img aria-hidden="true" id="decor-1" src="./assets/circles.png" alt="">
+            <img aria-hidden="true" id="decor-2" src="./assets/circles-2.png" alt="">
+        </div>
     </section>
     
     <!-- ================= -->
@@ -170,7 +176,8 @@
     <!-- ================= -->
 
     
-    <section class="bg-light">
+    <section class="bg-light" style="position: relative;
+    padding-top: 140px;">
 
         <div class="custom-shape-divider-top-1627262508">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -178,14 +185,25 @@
             </svg>
         </div>
 
-        <div id="projects" class="padding-y text-center gutter">
+        <div id="gallery" class="padding-y text-center gutter">
             <span class="weight-light">Previous Projects</span>
             <h2 class="padding-bottom">Our<span class="text-accent"> Work</span></h2>
-            <button id='gallery-btn' class="button-solid">Gallery</button>
-            <img src="./assets/work-1.jpg" alt="a picture of a newly layed concrete driveway">
-            <img src="./assets/work-2.jpg" alt="a picture of a newly layed concrete driveway">
-            <img src="./assets/work-3.jpg" alt="a picture of a newly layed concrete driveway">
-            <img src="./assets/work-4.jpg" alt="a picture of a newly layed concrete driveway">
+            <button id='gallery-btn-mobile' class="button-solid" onclick="location.href='/gallery.html'">Gallery</button>
+            <div id="gallery-grid">
+                <div class="slot">
+                    <img src="./assets/work-1.jpg" alt="a picture of a newly layed concrete driveway">
+                </div>
+                <div class="slot">
+                    <button id='gallery-btn-desktop' class="button-solid" onclick="location.href='/gallery.html'">Gallery</button>
+                    <img src="./assets/work-2.jpg" alt="a picture of a newly layed concrete driveway">
+                </div>
+                <div class="slot">
+                    <img src="./assets/work-3.jpg" alt="a picture of a newly layed concrete driveway">
+                </div>
+                <div class="slot">
+                    <img src="./assets/work-4.jpg" alt="a picture of a newly layed concrete driveway">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -193,7 +211,7 @@
     <!--      Reviews      -->
     <!-- ================= -->
 
-    <section class="padding-y" style="position: relative;">
+    <section class="padding-y" style="position: relative; overflow: hidden;">
         <div id="reviews" class="text-center gutter">
             <span class="weight-light">What They Say</span>
             <h2 class="padding-bottom">Our <span class="text-accent">Reviews</span></h2>
@@ -220,34 +238,48 @@
     <!-- ================= -->
 
     <section>
-        <div class="gutter padding-y bg-dark text-secondary text-center">
-            <h3 class="weight-medium">Contact</h3>
-            <ul style="list-style-type: none; padding: 0">
-                <li>Greg Massey</li>
-                <li>(704) 589-3711</li>
-                <li>kbcconcrete@gmail.com</li>
-            </ul>
+        <div id='footer-row-one' class="padding-y bg-dark text-secondary">
+            <div class="gutter">
+                <h3 class="weight-medium">Contact</h3>
+                <ul style="list-style-type: none; padding: 0">
+                    <li>Greg Massey</li>
+                    <li>(704) 589-3711</li>
+                    <li>kbcconcrete@gmail.com</li>
+                </ul>
+            </div>
         </div>
-        <div class="gutter padding-y bg-primary text-center text-light">
-            <h3 class="weight-medium" style>Navigation</h3>
-            <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='services.html'>Services</a></li>
-                <li><a href='gallery.html'>Gallery</a></li>
-                <li><a href='contact.html'>Contact</a></li>
-            </ul>
-            <h3 class="weight-medium">services</h3>
-            <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
-                <li>Concrete</li>
-                <li>Drive Ways</li>
-                <li>Patios</li>
-                <li>Stamp Design</li>
-                <li>Demo / Repair</li>
-                <li>Asphalt Patching</li>
-                <li>Asphalt Repair</li>
-                <li>Overlay</li>
-                <li>Anything Else</li>
-            </ul>
+        <div id='footer-row-two' class="padding-y bg-primary text-light">
+            <div class="gutter">
+                <div id="navigation-group">
+                    <h3 class="weight-medium" style>Navigation</h3>
+                    <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='services.html'>Services</a></li>
+                        <li><a href='gallery.html'>Gallery</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
+                    </ul>
+                </div>
+                <div id="services-group">
+                    <h3 class="weight-medium">Services</h3>
+                    <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
+                        <div class="footer-li-group">
+                            <li>Concrete</li>
+                            <li>Drive Ways</li>
+                            <li>Patios</li>
+                        </div>
+                        <div class="footer-li-group">
+                            <li>Stamp Design</li>
+                            <li>Demo / Repair</li>
+                            <li>Asphalt Patching</li>
+                        </div>
+                        <div class="footer-li-group">
+                            <li>Asphalt Repair</li>
+                            <li>Overlay</li>
+                            <li>Anything Else</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 

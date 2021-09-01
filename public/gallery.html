@@ -41,7 +41,7 @@
                     <div id='desktop-nav-links'>                    
                         <a href='index.html'>Home</a>
                         <a href="services.html">Services</a>
-                        <a class="text-dark" href='gallery.html'>Gallery</a>
+                        <a class="text-accent" href='gallery.html'>Gallery</a>
                         <a href='contact.html'>Contact</a>
                     </div>
                 </div>
@@ -54,9 +54,11 @@
     <!-- ================= -->
 
     <section id='hero' class="padding-y">
-        <div class='blackbox text-light gutter'>
-            <h1 class="text-accent">Gallery</h1>
-            <p>A collection of the kind of quality and expertise you can expect.</p>
+        <div class='blackbox text-light'> 
+            <div class="gutter">
+                <h1 class="text-accent">Gallery</h1>
+                <p>A collection of the kind of quality and expertise you can expect.</p>
+            </div>
         </div>
     </section>
 
@@ -65,9 +67,56 @@
     <!-- ================= -->
 
     <section class="padding-y">
-        <a class="gallery-viewer" href="./assets/work-4.jpg">
+        <!-- <a class="gallery-viewer" href="./assets/work-4.jpg">
             <img class="gallery-thumbnail" src="./assets/work-4.jpg" alt="">
-        </a>
+        </a> -->
+        <div class="gallery-grid gutter">
+            <div class="pic-1">
+                <a class="gallery-viewer" href="./assets/gallery/pic-1.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="pic-2">
+                <a class="gallery-viewer" href="./assets/gallery/pic-2.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-2.jpg" alt="">
+                </a>            
+            </div>
+            <div class="pic-3">
+                <a class="gallery-viewer" href="./assets/gallery/pic-3.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-3.jpg" alt="">
+                </a>            
+            </div>
+            <div class="pic-4">
+                <a class="gallery-viewer" href="./assets/gallery/pic-4.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-4.jpg" alt="">
+                </a>            
+            </div>
+            <div class="pic-5">
+                <a class="gallery-viewer" href="./assets/gallery/pic-5.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-5.jpg" alt="">
+                </a>            
+            </div>
+            <div class="pic-6">
+                <a class="gallery-viewer" href="./assets/gallery/pic-6.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-6.jpg" alt="">
+                </a>            
+            </div>
+            <div class="pic-7">
+                <a class="gallery-viewer" href="./assets/gallery/pic-7.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-7.jpg" alt="">
+                </a>            
+            </div>
+            <div class="pic-8">
+                <a class="gallery-viewer" href="./assets/gallery/pic-8.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-8.jpg" alt="">
+                </a>            
+            </div>
+            <div class="pic-9">
+                <a class="gallery-viewer" href="./assets/gallery/pic-9.jpg">
+                    <img class="gallery-thumbnail" src="./assets/gallery/pic-9.jpg" alt="">
+                </a>            
+            </div>
+        </div>
     </section>
 
     <!-- ================= -->
@@ -75,34 +124,48 @@
     <!-- ================= -->
 
     <section>
-        <div class="gutter padding-y bg-dark text-secondary text-center">
-            <h3 class="weight-medium">Contact</h3>
-            <ul style="list-style-type: none; padding: 0">
-                <li>Greg Massey</li>
-                <li>(704) 589-3711</li>
-                <li>kbcconcrete@gmail.com</li>
-            </ul>
+        <div id='footer-row-one' class="padding-y bg-dark text-secondary">
+            <div class="gutter">
+                <h3 class="weight-medium">Contact</h3>
+                <ul style="list-style-type: none; padding: 0">
+                    <li>Greg Massey</li>
+                    <li>(704) 589-3711</li>
+                    <li>kbcconcrete@gmail.com</li>
+                </ul>
+            </div>
         </div>
-        <div class="gutter padding-y bg-primary text-center text-light">
-            <h3 class="weight-medium" style>Navigation</h3>
-            <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='services.html'>Services</a></li>
-                <li><a href='gallery.html'>Gallery</a></li>
-                <li><a href='contact.html'>Contact</a></li>
-            </ul>
-            <h3 class="weight-medium">services</h3>
-            <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
-                <li>Concrete</li>
-                <li>Drive Ways</li>
-                <li>Patios</li>
-                <li>Stamp Design</li>
-                <li>Demo / Repair</li>
-                <li>Asphalt Patching</li>
-                <li>Asphalt Repair</li>
-                <li>Overlay</li>
-                <li>Anything Else</li>
-            </ul>
+        <div id='footer-row-two' class="padding-y bg-primary text-light">
+            <div class="gutter">
+                <div id="navigation-group">
+                    <h3 class="weight-medium" style>Navigation</h3>
+                    <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='services.html'>Services</a></li>
+                        <li><a href='gallery.html'>Gallery</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
+                    </ul>
+                </div>
+                <div id="services-group">
+                    <h3 class="weight-medium">Services</h3>
+                    <ul style="list-style-type: none; padding: 0; margin-bottom: 60px;">
+                        <div class="footer-li-group">
+                            <li>Concrete</li>
+                            <li>Drive Ways</li>
+                            <li>Patios</li>
+                        </div>
+                        <div class="footer-li-group">
+                            <li>Stamp Design</li>
+                            <li>Demo / Repair</li>
+                            <li>Asphalt Patching</li>
+                        </div>
+                        <div class="footer-li-group">
+                            <li>Asphalt Repair</li>
+                            <li>Overlay</li>
+                            <li>Anything Else</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
