@@ -92,6 +92,13 @@ input[type='submit']:hover {
         width: 75%;
         text-align: left;
     }
+
+    .blackbox .gutter {
+      margin: 0;
+      margin-left: auto;
+      max-width: calc(600px + 25vw - 24px - 36px);
+      text-align: left;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
