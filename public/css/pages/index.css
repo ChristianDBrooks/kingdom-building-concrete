@@ -53,6 +53,10 @@
     border-radius: 0 1000px 1000px 0;
     width: 90%;
     box-shadow: var(--shadow);
+
+    max-height: 420px;
+    object-fit: cover;
+    /* max-width: 550px; */
 }
 
 .detail {
