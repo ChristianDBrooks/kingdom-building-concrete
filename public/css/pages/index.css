@@ -56,7 +56,6 @@
 
     max-height: 420px;
     object-fit: cover;
-    /* max-width: 550px; */
 }
 
 .detail {
@@ -118,6 +117,7 @@
     height: auto;
     border-radius: 15px;
     box-shadow: var(--shadow);
+    max-width: calc((100vw - 30px - 48px) / 4);
 }
 
 #gallery-btn-mobile {
