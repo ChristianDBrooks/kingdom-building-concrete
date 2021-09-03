@@ -35,6 +35,13 @@
         text-align: left;
     }
 
+    .blackbox .gutter {
+        margin: 0;
+        margin-left: auto;
+        max-width: calc(600px + 25vw - 36px);
+        text-align: left;
+    }
+
 
     .gallery-thumbnail {
         object-fit: cover;

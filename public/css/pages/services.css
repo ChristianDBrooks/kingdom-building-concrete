@@ -60,6 +60,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
     .service-title-mobile {
         display: none;
     }
@@ -75,9 +76,29 @@
         text-align: left;
     }
 
+        
+    .blackbox .gutter {
+        margin: 0;
+        margin-left: auto;
+        max-width: calc(600px + 25vw - 24px - 36px);
+        text-align: left;
+    }
+
     .service {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .service-info {
+        max-width: 600px;
+    }
+
+    .service-info.left{
+        margin-left: auto;
+    }
+
+    .service-info.right {
+        margin-right: auto;
     }
 
     .img-right, .img-left {
