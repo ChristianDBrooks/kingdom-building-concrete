@@ -24,7 +24,7 @@
   
   #footer-row-one ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 75%;
     margin: 0;
   }
