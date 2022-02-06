@@ -23,7 +23,7 @@
     border-radius: 15px;
     position: relative;
     left: -20px;
-    height: 150px;
+    height: 250px;
     box-shadow: var(--shadow);
     object-fit: cover;
 }
@@ -32,7 +32,7 @@
     border-radius: 15px;
     position: relative;
     right: -20px;
-    height: 150px;
+    height: 250px;
     box-shadow: var(--shadow);
     object-fit: cover;
 }
@@ -40,6 +40,8 @@
 .service-title-mobile {
     text-align: center;
     margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .divider {
@@ -53,6 +55,10 @@
 
 .service-title-desktop {
     display: none;
+}
+
+.btn {
+    margin-top: 24px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -84,13 +90,25 @@
         text-align: left;
     }
 
+    .img-left {
+        height: 150px;
+    }
+    
+    .img-right {
+        height: 150px;
+    }
+
     .service {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     .service-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         max-width: 600px;
+        width: 100%;
     }
 
     .service-info.left{
@@ -112,6 +130,7 @@
 
     .btn {
         margin-top: 24px;
+        width: 100%;
     }
 
     #cta-banner {
