@@ -3,7 +3,7 @@
 @import url('../components/footer.css');
 
 #hero {
-    background-image: url('./../../assets/hero.png');
+    background-image: url('./../../assets/hero.webp');
     background-position: center;
     background-size: cover;
     text-align: center;
