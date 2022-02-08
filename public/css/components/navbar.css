@@ -65,7 +65,7 @@
 }
 
 #mobile-nav-links > * {
-  margin-bottom: 16px;
+  padding: 12px 0;
   font-weight: 600;
   white-space: nowrap;
   cursor: pointer;
