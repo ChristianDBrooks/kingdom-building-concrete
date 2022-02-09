@@ -1,6 +1,3 @@
-@import url('./colors.css');
-@import url('./theme.css');
-
 :root {
   --spacing: 72px;
 }
@@ -34,12 +31,12 @@
   background-color: var(--accent-color);
 }
 
-.fullscreen-bg-img {  
-    min-height: 100vh;
-    background-image: url('../../assets/jumbo.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+.fullscreen-bg-img {
+  min-height: 100vh;
+  background-image: url("../../assets/jumbo.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .background-img {

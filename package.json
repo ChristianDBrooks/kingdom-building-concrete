@@ -4,7 +4,8 @@
   "description": "A new refactored portfolio site for Christian Brooks.",
   "main": "index.js",
   "scripts": {
-    "start": "npx browser-sync start --server \"public\" -w",
+    "production": "serve public",
+    "develop": "npx browser-sync start --server \"public\" -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
